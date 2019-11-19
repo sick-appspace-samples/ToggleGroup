@@ -1,0 +1,46 @@
+<layout-row id="RowLayout1">
+	<layout-row id="RowLayout2">
+		<layout-column id="ColumnLayout2">
+						<davinci-value-display id="ValueDisplay1" value="Toggle group">
+			</davinci-value-display>
+			<davinci-toggle-group id="ToggleGroup1" value="1">
+				<davinci-radio-button id="Radiobutton1" value="1">
+					<span>Option 1</span>
+				</davinci-radio-button>
+				<davinci-checkbox id="Checkbox1" value="2">
+					<span>Option 2</span>
+				</davinci-checkbox>
+				<davinci-button id="Button1" type="primary" value="3" toggle>
+					<span>Option 3</span>
+				</davinci-button>
+				<davinci-toggle-switch id="ToggleSwitch1" tabindex="0" value="4">
+				</davinci-toggle-switch>
+				<crown-binding event="change" name="ToggleGroup/selectedOptionChanged" path="param/args/option" auto-commit></crown-binding>
+				<crown-edpws-binding property="value" name="ToggleGroup/OptionSwitched" update-on-resume></crown-edpws-binding>
+				<crown-binding property="value" name="ToggleGroup/getSelectedOption" path="result/data/option" auto-update="0" update-on-resume></crown-binding>
+			</davinci-toggle-group>
+		</layout-column>
+		<layout-column id="ColumnLayout1">
+			<layout-row id="RowLayout3">
+				<davinci-drop-down id="DropDown1" label="Select option" value="1">
+					<davinci-option id="Option1" value="1">
+						<span>Option 1</span>
+					</davinci-option>
+					<davinci-option id="Option2" value="2">
+						<span>Option 2</span>
+					</davinci-option>
+					<davinci-option id="Option3" value="3">
+						<span>Option 3</span>
+					</davinci-option>
+					<davinci-option id="Option4" value="4">
+						<span>Option 4</span>
+					</davinci-option>
+					<crown-binding event="change" name="ToggleGroup/selectedOptionChanged" path="param/args/option" auto-commit></crown-binding>
+					<crown-binding property="value" name="ToggleGroup/getSelectedOption" path="result/data/option" auto-update="0" update-on-resume></crown-binding>
+					<crown-edpws-binding property="value" name="ToggleGroup/OptionSwitched" update-on-resume></crown-edpws-binding>
+				</davinci-drop-down>
+			</layout-row>
+		</layout-column>
+	</layout-row>
+  
+</layout-row>

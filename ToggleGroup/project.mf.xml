@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<manifest>
+    <application name="ToggleGroup">
+        <crown name="ToggleGroup">
+            <desc>user script</desc>
+            <serves>
+                <event name="OptionSwitched">
+                    <desc></desc>
+                    <param name="value" type="string" desc=""/>
+                </event>
+                <function name="selectedOptionChanged">
+                    <desc></desc>
+                    <param name="option" type="string" desc=""/>
+                </function>
+                <function name="getSelectedOption">
+                    <desc></desc>
+                    <return name="option" type="string" desc=""/>
+                </function>
+            </serves>
+        </crown>
+        <meta key="author">AppSpace Sample</meta>
+        <meta key="version">1.0</meta>
+        <meta key="priority">low</meta>
+        <meta key="read-protected">false</meta>
+        <meta key="copy-protected">false</meta>
+        <entry path="scripts" default="main.lua"/>
+    </application>
+</manifest>
