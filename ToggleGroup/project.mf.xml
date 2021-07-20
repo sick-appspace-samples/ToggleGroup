@@ -1,20 +1,20 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <manifest>
     <application name="ToggleGroup">
         <crown name="ToggleGroup">
             <desc>user script</desc>
             <serves>
                 <event name="OptionSwitched">
-                    <desc></desc>
-                    <param name="value" type="string" desc=""/>
+                    <desc/>
+                    <param desc="" name="value" type="string"/>
                 </event>
                 <function name="selectedOptionChanged">
-                    <desc></desc>
-                    <param name="option" type="string" desc=""/>
+                    <desc/>
+                    <param desc="" name="option" type="string"/>
                 </function>
                 <function name="getSelectedOption">
-                    <desc></desc>
-                    <return name="option" type="string" desc=""/>
+                    <desc/>
+                    <return desc="" name="option" type="string"/>
                 </function>
             </serves>
         </crown>
@@ -23,6 +23,6 @@
         <meta key="priority">low</meta>
         <meta key="read-protected">false</meta>
         <meta key="copy-protected">false</meta>
-        <entry path="scripts" default="main.lua"/>
+        <entry default="main.lua" path="scripts"/>
     </application>
 </manifest>
